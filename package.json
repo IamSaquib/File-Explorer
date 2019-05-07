@@ -1,0 +1,24 @@
+{
+  "name": "file-explorer",
+  "version": "1.0.0",
+  "description": "A web app to explore files and folders in directories",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "deploy": "gcloud app deploy",
+    "start": "node app.js"
+  },
+  "keywords": [
+    "Nodejs",
+    "File-Explorer",
+    "File-System",
+    "Express",
+    "Angular",
+    "Web",
+    "App"
+  ],
+  "author": "Saquib Ul Hassan",
+  "license": "ISC",
+  "dependencies": {
+  }
+}
