@@ -1,23 +1,29 @@
 {
   "name": "file-explorer",
-  "version": "1.0.0",
-  "description": "A web app to explore files and folders in directories",
-  "main": "app.js",
+  "version": "0.0.1",
+  "description": "A faster and efficient desktop file explorer",
+  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "deploy": "gcloud app deploy",
-    "start": "node app.js"
+    "tauri": "tauri"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iamsaquib8/File-Explorer.git"
   },
   "keywords": [
-    "Nodejs",
-    "File-Explorer",
-    "File-System",
-    "Express",
-    "Angular",
-    "Web",
-    "App"
+    "desktop-app",
+    "tauri",
+    "rust",
+    "explorer"
   ],
-  "author": "Saquib Ul Hassan",
+  "author": "iamsaquib8",
   "license": "ISC",
-  "dependencies": {}
+  "bugs": {
+    "url": "https://github.com/iamsaquib8/File-Explorer/issues"
+  },
+  "homepage": "https://github.com/iamsaquib8/File-Explorer#readme",
+  "dependencies": {
+    "tauri": "^0.11.1"
+  }
 }
