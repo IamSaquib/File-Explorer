@@ -26,26 +26,22 @@ impl Component for App {
 
     fn view(&self) -> Html {
         html! {
-                    // <>
-                    //     <Nav />
-                    //     <Router<AppRoute, ()>
-                    //         render = Router::render(|switch: AppRoute | {
-                    //             match switch {
-                    //                 AppRoute::Home => html!{ <Home /> },
-                    //                 AppRoute::PageNotFound(Permissive(None)) => html!{"Page not found"},
-                    //                 AppRoute::PageNotFound(Permissive(Some(missed_route))) => html!{format!("Page '{}' not found", missed_route)}
-                    //             }
-                    //         } )
-                    //         redirect = Router::redirect(|route: Route<()>| {
-                    //             AppRoute::PageNotFound(Permissive(Some(route.route)))
-                    //         })
-                    //     />
-                    // </>
+                    <>
+                        <Nav />
+                        <Router<AppRoute, ()>
+                            render = Router::render(|switch: AppRoute | {
+                                match switch {
+                                    AppRoute::Home => html!{ <Home /> },
+                                    AppRoute::PageNotFound(Permissive(None)) => html!{"Page not found"},
+                                    AppRoute::PageNotFound(Permissive(Some(missed_route))) => html!{format!("Page '{}' not found", missed_route)}
+                                }
+                            } )
+                            redirect = Router::redirect(|route: Route<()>| {
+                                AppRoute::PageNotFound(Permissive(Some(route.route)))
+                            })
+                        />
+                    </>
 
-            <yewtify::App>
-                <yewtify::NavigationDrawer>
-                </yewtify::NavigationDrawer>
-            </yewtify::App>
         }
     }
 }

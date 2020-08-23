@@ -8,8 +8,8 @@ pub mod home;
 pub enum AppRoute {
     #[to = "/page-not-found"]
     PageNotFound(Permissive<String>),
-    #[to = "#/{path}"]
-    Explorer(String),
+    // #[to = "#/{path}"]
+    // Explorer(String),
     #[to = "#/"]
     Home,
 }
